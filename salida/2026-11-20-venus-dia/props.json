@@ -1,0 +1,414 @@
+{
+ "id": "2026-11-20-venus-dia",
+ "tema": "Espacio",
+ "titulo": "Venus",
+ "tituloAcento": "días más largos que años",
+ "duracion": 24.002,
+ "audio": "2026-11-20-venus-dia/voz.wav",
+ "escenas": [
+  {
+   "tipo": "svg",
+   "etiqueta": "El planeta más lento",
+   "svg": "<svg viewBox='0 0 800 800' xmlns='http://www.w3.org/2000/svg'><circle cx='400' cy='420' r='240' fill='#FFC531' stroke='#1D1A2B' stroke-width='16'/><path d='M200 360 Q300 330 400 360 T600 350' fill='none' stroke='#E9A400' stroke-width='22' stroke-linecap='round'/><path d='M210 500 Q320 470 420 500 T610 490' fill='none' stroke='#E9A400' stroke-width='22' stroke-linecap='round'/><circle cx='340' cy='420' r='22' fill='#1D1A2B'/><circle cx='460' cy='420' r='22' fill='#1D1A2B'/><ellipse cx='400' cy='490' rx='26' ry='20' fill='#1D1A2B'/><path d='M150 210 A300 300 0 0 1 400 110' fill='none' stroke='#E5426F' stroke-width='16' stroke-linecap='round'/><polygon points='400,80 440,112 396,140' fill='#E5426F' stroke='#1D1A2B' stroke-width='8' stroke-linejoin='round'/><text x='640' y='170' font-family='Montserrat' font-weight='900' font-size='60' fill='#1D1A2B' text-anchor='middle'>ZZZ</text></svg>",
+   "inicio": 0.25,
+   "fin": 3.901
+  },
+  {
+   "tipo": "numero",
+   "valor": 243,
+   "unidad": "días",
+   "etiqueta": "para girar una vez sobre sí misma",
+   "inicio": 3.801,
+   "fin": 9.109
+  },
+  {
+   "tipo": "numero",
+   "valor": 225,
+   "unidad": "días",
+   "etiqueta": "para dar la vuelta al Sol",
+   "inicio": 9.009,
+   "fin": 13.954
+  },
+  {
+   "tipo": "comparacion",
+   "a": {
+    "nombre": "Un giro",
+    "valor": 243,
+    "texto": "243"
+   },
+   "b": {
+    "nombre": "Un año",
+    "valor": 225,
+    "texto": "225"
+   },
+   "inicio": 13.854,
+   "fin": 17.327
+  },
+  {
+   "tipo": "svg",
+   "etiqueta": "El Sol sale por el oeste",
+   "svg": "<svg viewBox='0 0 800 800' xmlns='http://www.w3.org/2000/svg'><rect x='40' y='520' width='720' height='200' rx='24' fill='#B07A4F' stroke='#1D1A2B' stroke-width='14'/><circle cx='180' cy='520' r='110' fill='#FFC531' stroke='#1D1A2B' stroke-width='14'/><g stroke='#1D1A2B' stroke-width='14' stroke-linecap='round'><line x1='180' y1='370' x2='180' y2='320'/><line x1='70' y1='410' x2='40' y2='380'/><line x1='290' y1='410' x2='320' y2='380'/></g><rect x='40' y='520' width='720' height='200' rx='24' fill='#B07A4F'/><rect x='40' y='520' width='720' height='200' rx='24' fill='none' stroke='#1D1A2B' stroke-width='14'/><g font-family='Montserrat' font-weight='900' font-size='56' fill='#FFFFFF' text-anchor='middle'><text x='180' y='640'>OESTE</text><text x='620' y='640'>ESTE</text></g><path d='M340 220 Q500 120 640 260' fill='none' stroke='#E5426F' stroke-width='16' stroke-linecap='round' stroke-dasharray='30 22'/><polygon points='668,300 610,270 660,240' fill='#E5426F' stroke='#1D1A2B' stroke-width='8' stroke-linejoin='round'/></svg>",
+   "inicio": 17.227,
+   "fin": 21.106
+  },
+  {
+   "tipo": "cierre",
+   "inicio": 21.006,
+   "fin": 23.802
+  }
+ ],
+ "palabras": [
+  {
+   "w": "En",
+   "s": 0.25,
+   "e": 0.401
+  },
+  {
+   "w": "Venus,",
+   "s": 0.401,
+   "e": 0.78
+  },
+  {
+   "w": "un",
+   "s": 0.78,
+   "e": 0.932
+  },
+  {
+   "w": "día",
+   "s": 0.932,
+   "e": 1.121
+  },
+  {
+   "w": "dura",
+   "s": 1.121,
+   "e": 1.348
+  },
+  {
+   "w": "más",
+   "s": 1.348,
+   "e": 1.538
+  },
+  {
+   "w": "que",
+   "s": 1.538,
+   "e": 1.727
+  },
+  {
+   "w": "un",
+   "s": 1.727,
+   "e": 1.879
+  },
+  {
+   "w": "año.",
+   "s": 1.879,
+   "e": 2.182
+  },
+  {
+   "w": "Y",
+   "s": 2.182,
+   "e": 2.295
+  },
+  {
+   "w": "no",
+   "s": 2.295,
+   "e": 2.447
+  },
+  {
+   "w": "es",
+   "s": 2.447,
+   "e": 2.598
+  },
+  {
+   "w": "una",
+   "s": 2.598,
+   "e": 2.787
+  },
+  {
+   "w": "forma",
+   "s": 2.787,
+   "e": 3.053
+  },
+  {
+   "w": "de",
+   "s": 3.053,
+   "e": 3.204
+  },
+  {
+   "w": "hablar.",
+   "s": 3.204,
+   "e": 3.621
+  },
+  {
+   "w": "Venus",
+   "s": 3.901,
+   "e": 4.307
+  },
+  {
+   "w": "tarda",
+   "s": 4.307,
+   "e": 4.712
+  },
+  {
+   "w": "243",
+   "s": 4.712,
+   "e": 5.002
+  },
+  {
+   "w": "días",
+   "s": 5.002,
+   "e": 5.35
+  },
+  {
+   "w": "terrestres",
+   "s": 5.35,
+   "e": 6.046
+  },
+  {
+   "w": "en",
+   "s": 6.046,
+   "e": 6.278
+  },
+  {
+   "w": "girar",
+   "s": 6.278,
+   "e": 6.684
+  },
+  {
+   "w": "una",
+   "s": 6.684,
+   "e": 6.973
+  },
+  {
+   "w": "sola",
+   "s": 6.973,
+   "e": 7.321
+  },
+  {
+   "w": "vez",
+   "s": 7.321,
+   "e": 7.611
+  },
+  {
+   "w": "sobre",
+   "s": 7.611,
+   "e": 8.017
+  },
+  {
+   "w": "sí",
+   "s": 8.017,
+   "e": 8.249
+  },
+  {
+   "w": "misma.",
+   "s": 8.249,
+   "e": 8.829
+  },
+  {
+   "w": "Pero",
+   "s": 9.109,
+   "e": 9.46
+  },
+  {
+   "w": "solo",
+   "s": 9.46,
+   "e": 9.811
+  },
+  {
+   "w": "necesita",
+   "s": 9.811,
+   "e": 10.396
+  },
+  {
+   "w": "225",
+   "s": 10.396,
+   "e": 10.689
+  },
+  {
+   "w": "días",
+   "s": 10.689,
+   "e": 11.04
+  },
+  {
+   "w": "para",
+   "s": 11.04,
+   "e": 11.391
+  },
+  {
+   "w": "dar",
+   "s": 11.391,
+   "e": 11.684
+  },
+  {
+   "w": "la",
+   "s": 11.684,
+   "e": 11.918
+  },
+  {
+   "w": "vuelta",
+   "s": 11.918,
+   "e": 12.386
+  },
+  {
+   "w": "completa",
+   "s": 12.386,
+   "e": 12.972
+  },
+  {
+   "w": "al",
+   "s": 12.972,
+   "e": 13.206
+  },
+  {
+   "w": "Sol.",
+   "s": 13.206,
+   "e": 13.674
+  },
+  {
+   "w": "O",
+   "s": 13.954,
+   "e": 14.087
+  },
+  {
+   "w": "sea,",
+   "s": 14.087,
+   "e": 14.44
+  },
+  {
+   "w": "termina",
+   "s": 14.44,
+   "e": 14.838
+  },
+  {
+   "w": "su",
+   "s": 14.838,
+   "e": 15.015
+  },
+  {
+   "w": "año",
+   "s": 15.015,
+   "e": 15.236
+  },
+  {
+   "w": "antes",
+   "s": 15.236,
+   "e": 15.545
+  },
+  {
+   "w": "de",
+   "s": 15.545,
+   "e": 15.722
+  },
+  {
+   "w": "completar",
+   "s": 15.722,
+   "e": 16.208
+  },
+  {
+   "w": "un",
+   "s": 16.208,
+   "e": 16.384
+  },
+  {
+   "w": "solo",
+   "s": 16.384,
+   "e": 16.65
+  },
+  {
+   "w": "giro.",
+   "s": 16.65,
+   "e": 17.047
+  },
+  {
+   "w": "Y",
+   "s": 17.327,
+   "e": 17.449
+  },
+  {
+   "w": "como",
+   "s": 17.449,
+   "e": 17.693
+  },
+  {
+   "w": "gira",
+   "s": 17.693,
+   "e": 17.938
+  },
+  {
+   "w": "al",
+   "s": 17.938,
+   "e": 18.1
+  },
+  {
+   "w": "revés",
+   "s": 18.1,
+   "e": 18.385
+  },
+  {
+   "w": "que",
+   "s": 18.385,
+   "e": 18.588
+  },
+  {
+   "w": "la",
+   "s": 18.588,
+   "e": 18.751
+  },
+  {
+   "w": "Tierra,",
+   "s": 18.751,
+   "e": 19.199
+  },
+  {
+   "w": "allí",
+   "s": 19.199,
+   "e": 19.443
+  },
+  {
+   "w": "el",
+   "s": 19.443,
+   "e": 19.606
+  },
+  {
+   "w": "Sol",
+   "s": 19.606,
+   "e": 19.809
+  },
+  {
+   "w": "sale",
+   "s": 19.809,
+   "e": 20.053
+  },
+  {
+   "w": "por",
+   "s": 20.053,
+   "e": 20.256
+  },
+  {
+   "w": "el",
+   "s": 20.256,
+   "e": 20.419
+  },
+  {
+   "w": "oeste.",
+   "s": 20.419,
+   "e": 20.826
+  },
+  {
+   "w": "Raro,",
+   "s": 21.106,
+   "e": 21.527
+  },
+  {
+   "w": "pero",
+   "s": 21.527,
+   "e": 21.808
+  },
+  {
+   "w": "cierto.",
+   "s": 21.808,
+   "e": 22.322
+  }
+ ],
+ "fuente": "NASA Science, Venus Facts",
+ "evidencia": "Agencia oficial"
+}

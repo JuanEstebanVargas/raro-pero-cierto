@@ -1,0 +1,77 @@
+{
+  "id": "2026-11-20-venus-dia",
+  "tema": "Espacio",
+  "titulo": "Venus",
+  "tituloAcento": "días más largos que años",
+  "voz": "em_alex",
+  "velocidad": 1.12,
+  "fuente": "NASA Science, Venus Facts",
+  "evidencia": "Agencia oficial",
+  "bloques": [
+    {
+      "narracion": "En Venus, un día dura más que un año. Y no es una forma de hablar.",
+      "escena": {
+        "tipo": "svg",
+        "etiqueta": "El planeta más lento",
+        "svg": "<svg viewBox='0 0 800 800' xmlns='http://www.w3.org/2000/svg'><circle cx='400' cy='420' r='240' fill='#FFC531' stroke='#1D1A2B' stroke-width='16'/><path d='M200 360 Q300 330 400 360 T600 350' fill='none' stroke='#E9A400' stroke-width='22' stroke-linecap='round'/><path d='M210 500 Q320 470 420 500 T610 490' fill='none' stroke='#E9A400' stroke-width='22' stroke-linecap='round'/><circle cx='340' cy='420' r='22' fill='#1D1A2B'/><circle cx='460' cy='420' r='22' fill='#1D1A2B'/><ellipse cx='400' cy='490' rx='26' ry='20' fill='#1D1A2B'/><path d='M150 210 A300 300 0 0 1 400 110' fill='none' stroke='#E5426F' stroke-width='16' stroke-linecap='round'/><polygon points='400,80 440,112 396,140' fill='#E5426F' stroke='#1D1A2B' stroke-width='8' stroke-linejoin='round'/><text x='640' y='170' font-family='Montserrat' font-weight='900' font-size='60' fill='#1D1A2B' text-anchor='middle'>ZZZ</text></svg>"
+      }
+    },
+    {
+      "narracion": "Venus tarda 243 días terrestres en girar una sola vez sobre sí misma.",
+      "escena": {
+        "tipo": "numero",
+        "valor": 243,
+        "unidad": "días",
+        "etiqueta": "para girar una vez sobre sí misma"
+      }
+    },
+    {
+      "narracion": "Pero solo necesita 225 días para dar la vuelta completa al Sol.",
+      "escena": {
+        "tipo": "numero",
+        "valor": 225,
+        "unidad": "días",
+        "etiqueta": "para dar la vuelta al Sol"
+      }
+    },
+    {
+      "narracion": "O sea, termina su año antes de completar un solo giro.",
+      "escena": {
+        "tipo": "comparacion",
+        "a": {
+          "nombre": "Un giro",
+          "valor": 243,
+          "texto": "243"
+        },
+        "b": {
+          "nombre": "Un año",
+          "valor": 225,
+          "texto": "225"
+        }
+      }
+    },
+    {
+      "narracion": "Y como gira al revés que la Tierra, allí el Sol sale por el oeste.",
+      "escena": {
+        "tipo": "svg",
+        "etiqueta": "El Sol sale por el oeste",
+        "svg": "<svg viewBox='0 0 800 800' xmlns='http://www.w3.org/2000/svg'><rect x='40' y='520' width='720' height='200' rx='24' fill='#B07A4F' stroke='#1D1A2B' stroke-width='14'/><circle cx='180' cy='520' r='110' fill='#FFC531' stroke='#1D1A2B' stroke-width='14'/><g stroke='#1D1A2B' stroke-width='14' stroke-linecap='round'><line x1='180' y1='370' x2='180' y2='320'/><line x1='70' y1='410' x2='40' y2='380'/><line x1='290' y1='410' x2='320' y2='380'/></g><rect x='40' y='520' width='720' height='200' rx='24' fill='#B07A4F'/><rect x='40' y='520' width='720' height='200' rx='24' fill='none' stroke='#1D1A2B' stroke-width='14'/><g font-family='Montserrat' font-weight='900' font-size='56' fill='#FFFFFF' text-anchor='middle'><text x='180' y='640'>OESTE</text><text x='620' y='640'>ESTE</text></g><path d='M340 220 Q500 120 640 260' fill='none' stroke='#E5426F' stroke-width='16' stroke-linecap='round' stroke-dasharray='30 22'/><polygon points='668,300 610,270 660,240' fill='#E5426F' stroke='#1D1A2B' stroke-width='8' stroke-linejoin='round'/></svg>"
+      }
+    },
+    {
+      "narracion": "Raro, pero cierto.",
+      "escena": {
+        "tipo": "cierre"
+      }
+    }
+  ],
+  "publicacion": {
+    "descripcion": "Venus tarda unos 243 días terrestres en girar una vez sobre su eje, pero solo unos 225 en dar la vuelta al Sol. Además gira al revés que casi todos los planetas, así que allí el Sol sale por el oeste. Ojo: de un amanecer al siguiente pasan unos 117 días, porque su giro y su órbita se combinan.\n\nFuente: NASA Science, \"Venus: Facts\" (science.nasa.gov/venus/facts).\n\n¿Qué planeta quieres que expliquemos después?",
+    "hashtags": [
+      "#datoscuriosos",
+      "#espacio",
+      "#venus",
+      "#astronomia"
+    ]
+  }
+}

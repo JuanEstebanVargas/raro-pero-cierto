@@ -1,1 +1,158 @@
-{"ideas": []}
+{
+ "ideas": [
+  {
+   "slug": "venus-dia-mas-largo",
+   "pilar": "ESPACIO",
+   "dato": "En Venus, girar una vez sobre sí mismo tarda más que dar la vuelta al Sol",
+   "gancho": "Un día en Venus / dura más que su año",
+   "por_que_ahora": "",
+   "fuentes_iniciales": [
+    "https://science.nasa.gov/venus/facts"
+   ],
+   "puntos": {
+    "V": 5,
+    "R": 5,
+    "D": 3,
+    "A": 2,
+    "I": 4,
+    "F": 5
+   },
+   "puntuacion": 82,
+   "estado": "producida",
+   "creada": "2026-11-19"
+  },
+  {
+   "slug": "puerta-olvido",
+   "pilar": "MENTE",
+   "dato": "Cruzar una puerta favorece que olvides a qué ibas (efecto del umbral)",
+   "gancho": "Las puertas / borran tu memoria",
+   "por_que_ahora": "",
+   "fuentes_iniciales": [],
+   "puntos": {
+    "V": 5,
+    "R": 4,
+    "D": 4,
+    "A": 1,
+    "I": 5,
+    "F": 4
+   },
+   "puntuacion": 79,
+   "estado": "puntuada",
+   "creada": "2026-11-19"
+  },
+  {
+   "slug": "pulpo-tres-corazones",
+   "pilar": "ANIMALES",
+   "dato": "El pulpo tiene tres corazones y sangre azul",
+   "gancho": "El pulpo / tiene tres corazones",
+   "por_que_ahora": "",
+   "fuentes_iniciales": [],
+   "puntos": {
+    "V": 5,
+    "R": 5,
+    "D": 2,
+    "A": 1,
+    "I": 4,
+    "F": 4
+   },
+   "puntuacion": 74,
+   "estado": "puntuada",
+   "creada": "2026-11-19"
+  },
+  {
+   "slug": "cleopatra-iphone",
+   "pilar": "HISTORIA",
+   "dato": "Cleopatra vivió más cerca de la llegada a la Luna que de la construcción de la Gran Pirámide",
+   "gancho": "Cleopatra / y la Luna",
+   "por_que_ahora": "",
+   "fuentes_iniciales": [],
+   "puntos": {
+    "V": 5,
+    "R": 4,
+    "D": 3,
+    "A": 1,
+    "I": 5,
+    "F": 3
+   },
+   "puntuacion": 74,
+   "estado": "puntuada",
+   "creada": "2026-11-19"
+  },
+  {
+   "slug": "cerebro-10-por-ciento",
+   "pilar": "MITO",
+   "dato": "Es falso que solo usemos el 10 % del cerebro",
+   "gancho": "¿Usas solo el 10 %? / Falso",
+   "por_que_ahora": "",
+   "fuentes_iniciales": [],
+   "puntos": {
+    "V": 4,
+    "R": 5,
+    "D": 2,
+    "A": 1,
+    "I": 5,
+    "F": 4
+   },
+   "puntuacion": 72,
+   "estado": "puntuada",
+   "creada": "2026-11-19"
+  },
+  {
+   "slug": "miel-no-caduca",
+   "pilar": "CIENCIA",
+   "dato": "La miel bien sellada puede conservarse durante siglos",
+   "gancho": "La miel / casi no caduca",
+   "por_que_ahora": "",
+   "fuentes_iniciales": [],
+   "puntos": {
+    "V": 4,
+    "R": 5,
+    "D": 2,
+    "A": 1,
+    "I": 4,
+    "F": 4
+   },
+   "puntuacion": 69,
+   "estado": "puntuada",
+   "creada": "2026-11-19"
+  },
+  {
+   "slug": "tardigrados-espacio",
+   "pilar": "ANIMALES",
+   "dato": "Los tardígrados sobrevivieron al vacío del espacio",
+   "gancho": "Este animal / sobrevivió al espacio",
+   "por_que_ahora": "",
+   "fuentes_iniciales": [],
+   "puntos": {
+    "V": 4,
+    "R": 5,
+    "D": 3,
+    "A": 1,
+    "I": 3,
+    "F": 4
+   },
+   "puntuacion": 69,
+   "estado": "puntuada",
+   "creada": "2026-11-19"
+  },
+  {
+   "slug": "huesos-renuevan",
+   "pilar": "CUERPO",
+   "dato": "Tu esqueleto se renueva por completo en unos 10 años",
+   "gancho": "Tu esqueleto / se renueva",
+   "por_que_ahora": "",
+   "fuentes_iniciales": [],
+   "puntos": {
+    "V": 4,
+    "R": 4,
+    "D": 3,
+    "A": 1,
+    "I": 3,
+    "F": 4
+   },
+   "puntuacion": 65,
+   "estado": "puntuada",
+   "creada": "2026-11-19"
+  }
+ ]
+}

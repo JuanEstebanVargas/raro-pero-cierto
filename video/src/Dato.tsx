@@ -72,7 +72,7 @@ const Titulo: React.FC<{titulo: string; acento: string; grande?: boolean}> = ({t
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const s = spring({frame, fps, config: {damping: 12, stiffness: 140}});
-  const size = grande ? 120 : 76;
+  const size = grande ? 120 : 66;
   return (
     <div style={{position: 'absolute', top: grande ? 560 : 190, left: 50, right: 50, textAlign: 'center', fontFamily: FUENTE, fontWeight: 900, lineHeight: 1.02, transform: `scale(${interpolate(s, [0, 1], [0.6, 1])})`, opacity: s}}>
       <div style={{fontSize: size, color: C.tinta}}>{titulo.toUpperCase()}</div>
@@ -130,7 +130,7 @@ const Entrada: React.FC<{children: React.ReactNode}> = ({children}) => {
   const s = spring({frame, fps, config: {damping: 11, stiffness: 120}});
   const flota = Math.sin(frame / 18) * 10;
   return (
-    <div style={{position: 'absolute', top: 420, left: 0, right: 0, height: 980, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `translateY(${flota}px) scale(${interpolate(s, [0, 1], [0.4, 1])})`, opacity: s}}>
+    <div style={{position: 'absolute', top: 470, left: 0, right: 0, height: 940, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `translateY(${flota}px) scale(${interpolate(s, [0, 1], [0.4, 1])})`, opacity: s}}>
       {children}
     </div>
   );
