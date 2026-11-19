@@ -1,0 +1,24 @@
+name: Métricas de reels
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # cada 6 horas
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: metricas
+jobs:
+  metricas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Descargar métricas
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: python3 scripts/metricas.py
+      - name: Guardar
+        run: |
+          git config user.name "raro-pero-cierto-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git pull --rebase -q || true
+          git add metricas/ || true
+          git diff --cached --quiet || (git commit -m "Métricas actualizadas" && git push)

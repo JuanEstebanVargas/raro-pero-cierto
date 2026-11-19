@@ -8,7 +8,7 @@ Cuenta de Instagram que publica **un dato curioso verificado al día** en un ree
 2. **Cero mitos disfrazados de dato.** Si una "curiosidad" popular es falsa, solo se usa para desmentirla, y se dice explícitamente.
 3. **Nada de consejo médico, dosis ni promesas de salud.** Hablamos de cómo funciona algo, nunca de qué debe hacer alguien.
 4. **Originalidad.** Nunca copiar guion, imágenes ni estructura literal de otra cuenta. Se toman temas y formatos, no contenido.
-5. **Una persona aprueba antes de publicar.** El sistema entrega el paquete; Juanes publica o aprueba la publicación.
+5. **Publicación automática con ventana de veto.** Solo se publica lo que el control de calidad marca `Resultado: APROBADO`. Juanes puede frenar un video creando `salida/<id>/NO_PUBLICAR` antes de las 18:00 de Bogotá.
 6. **Voz:** voz sintética fija (`em_alex`, velocidad 1.12). Nunca clonar ni imitar la voz de una persona real.
 
 ## Flujo diario (skill `dato-diario`)
@@ -20,7 +20,8 @@ Cuenta de Instagram que publica **un dato curioso verificado al día** en un ree
 5. `python scripts/validar.py guion guiones/<id>.json` → corregir hasta APROBADO.
 6. `python scripts/producir.py guiones/<id>.json` → `salida/<id>/`.
 7. `control-calidad` → `python scripts/validar.py video salida/<id>` + revisión visual de fotogramas.
-8. Registrar en `ideas/publicados.json` y actualizar estado a `producida`.
+8. Registrar en `ideas/publicados.json`, actualizar estado a `producida`, commit y push a `main`.
+9. GitHub Actions publica a las 18:00 de Bogotá (`.github/workflows/publicar.yml`), descarga métricas cada 6 h y renueva el token de Instagram cada 15 días.
 
 ## Archivos
 

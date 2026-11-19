@@ -5,9 +5,9 @@ description: Produce el reel diario de Raro Pero Cierto de principio a fin (idea
 
 # Dato diario
 
-Objetivo: dejar en `salida/<id>/` un reel aprobado por el control de calidad, con su portada y texto de publicación, y entregarlo en una rama nueva con un pull request.
+Objetivo: dejar en `salida/<id>/` un reel aprobado por el control de calidad, con su portada y texto de publicación, y dejarlo en la cola de publicación automática.
 
-`<id>` = `AAAA-MM-DD-palabra-clave` con la fecha de publicación prevista (mañana si se ejecuta de noche).
+`<id>` = `AAAA-MM-DD-palabra-clave`. La fecha es el primer día, desde hoy (hora de Bogotá), que todavía no tenga carpeta en `salida/`. Así la cola nunca tiene dos videos el mismo día. Si ya hay 3 o más videos en cola sin publicar (sin `publicado.json`), no produzcas otro: termina con un resumen.
 
 ## Pasos
 
@@ -20,7 +20,9 @@ Objetivo: dejar en `salida/<id>/` un reel aprobado por el control de calidad, co
 7. `python scripts/producir.py guiones/<id>.json`.
 8. Skill `control-calidad`. Si rechaza, corrige el guion y vuelve al paso 6 (máximo 2 vueltas).
 9. Actualiza la idea a `producida`, añade a `ideas/publicados.json` un registro `{id, fecha, pilar, gancho, fuente}`.
-10. Crea la rama `claude/dato-<id>`, haz commit de `fichas/`, `guiones/`, `ideas/` y `salida/<id>/` (video.mp4, portada.jpg, publicacion.txt, props.json) y abre un pull request titulado `Dato <id>: <gancho>` con: el gancho, el texto de publicación, la fuente y el resultado del control de calidad. Fusionar el PR = aprobación humana.
+10. Haz commit en `main` de `fichas/`, `guiones/`, `ideas/` y `salida/<id>/` (video.mp4, portada.jpg, publicacion.txt, props.json, qa.md) y haz push a `main`. El flujo `Publicar reel del día` de GitHub Actions lo publica a las 18:00 de Bogotá de la fecha del id.
+11. Ventana de veto: entre la producción y las 18:00, Juanes puede impedir la publicación creando el archivo `salida/<id>/NO_PUBLICAR`.
+12. Termina con un resumen de 3 líneas: id, gancho, fuente.
 
 ## Ahorro de cupo
 

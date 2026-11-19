@@ -1,0 +1,31 @@
+name: Publicar reel del día
+on:
+  schedule:
+    - cron: "0 23 * * *"   # 18:00 en Bogotá (UTC-5)
+  workflow_dispatch:
+    inputs:
+      solo_probar:
+        description: "1 = no publica, solo muestra qué publicaría"
+        default: "0"
+permissions:
+  contents: write
+concurrency: publicar
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publicar en Instagram
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          REPO: ${{ github.repository }}
+          RAMA: ${{ github.ref_name }}
+          SOLO_PROBAR: ${{ github.event.inputs.solo_probar == '1' && '1' || '' }}
+        run: python3 scripts/publicar.py
+      - name: Guardar registro de publicación
+        run: |
+          git config user.name "raro-pero-cierto-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add salida/*/publicado.json || true
+          git diff --cached --quiet || (git commit -m "Publicado reel del día" && git push)

@@ -6,6 +6,13 @@
    "pilar": "ESPACIO",
    "gancho": "venus días más largos que años",
    "fuente": "NASA Science, Venus Facts"
+  },
+  {
+   "id": "2026-11-21-estomago",
+   "fecha": "2026-11-21",
+   "pilar": "CUERPO",
+   "gancho": "tu estómago no se digiere",
+   "fuente": "Allen y Flemström, 2005"
   }
  ]
 }
