@@ -1,0 +1,8 @@
+.venv/
+modelos/
+video/node_modules/
+video/public/*
+!video/public/.gitkeep
+salida/*/voz.wav
+salida/*/crudo.mp4
+__pycache__/

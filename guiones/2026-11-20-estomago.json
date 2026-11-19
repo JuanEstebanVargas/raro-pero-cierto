@@ -1,0 +1,65 @@
+{
+  "id": "2026-11-20-estomago",
+  "tema": "Cuerpo",
+  "titulo": "Tu estómago",
+  "tituloAcento": "no se digiere",
+  "voz": "em_alex",
+  "velocidad": 1.12,
+  "fuente": "Allen y Flemström, Am J Physiol Cell Physiol, 2005",
+  "evidencia": "Revisión científica",
+  "bloques": [
+    {
+      "narracion": "Tu estómago fabrica ácido clorhídrico, el mismo que la industria usa para limpiar acero.",
+      "escena": {
+        "tipo": "numero",
+        "valor": 1.5,
+        "decimales": 1,
+        "unidad": "pH",
+        "etiqueta": "la acidez de tu jugo gástrico"
+      }
+    },
+    {
+      "narracion": "Entonces, ¿por qué no se disuelve a sí mismo?",
+      "escena": {
+        "tipo": "svg",
+        "etiqueta": "¿Y por qué no se disuelve?",
+        "svg": "<svg viewBox='0 0 800 800' xmlns='http://www.w3.org/2000/svg'><path d='M300 120 C300 60 380 60 380 120 L380 240 C380 300 600 260 640 420 C690 620 480 720 340 650 C230 600 260 470 300 400 C330 340 300 300 300 240 Z' fill='#F28C8C' stroke='#1D1A2B' stroke-width='16' stroke-linejoin='round'/><path d='M340 420 C380 380 470 380 520 430' fill='none' stroke='#1D1A2B' stroke-width='12' stroke-linecap='round'/><circle cx='395' cy='500' r='22' fill='#1D1A2B'/><circle cx='505' cy='500' r='22' fill='#1D1A2B'/><path d='M410 580 Q450 555 490 580' fill='none' stroke='#1D1A2B' stroke-width='12' stroke-linecap='round'/><text x='560' y='230' font-family='Montserrat' font-weight='900' font-size='150' fill='#E5426F'>?</text></svg>"
+      }
+    },
+    {
+      "narracion": "Porque se protege con una capa de moco que neutraliza el ácido justo antes de tocar sus paredes.",
+      "escena": {
+        "tipo": "svg",
+        "etiqueta": "Un escudo de moco",
+        "svg": "<svg viewBox='0 0 800 800' xmlns='http://www.w3.org/2000/svg'><rect x='80' y='520' width='640' height='180' rx='20' fill='#F28C8C' stroke='#1D1A2B' stroke-width='14'/><rect x='80' y='440' width='640' height='80' rx='20' fill='#9BE3C4' stroke='#1D1A2B' stroke-width='14'/><g fill='#FFC531' stroke='#1D1A2B' stroke-width='10'><circle cx='170' cy='200' r='40'/><circle cx='330' cy='300' r='40'/><circle cx='480' cy='180' r='40'/><circle cx='630' cy='310' r='40'/></g><g font-family='Montserrat' font-weight='900' font-size='34' fill='#1D1A2B' text-anchor='middle'><text x='170' y='212'>H+</text><text x='330' y='312'>H+</text><text x='480' y='192'>H+</text><text x='630' y='322'>H+</text><text x='400' y='494'>MOCO + BICARBONATO</text><text x='400' y='625'>PARED DEL ESTÓMAGO</text></g></svg>"
+      }
+    },
+    {
+      "narracion": "Y además, renueva las células de su superficie cada pocos días.",
+      "escena": {
+        "tipo": "lista",
+        "titulo": "Su defensa",
+        "items": [
+          "Capa de moco",
+          "Bicarbonato",
+          "Células nuevas cada pocos días"
+        ]
+      }
+    },
+    {
+      "narracion": "Cuando esa barrera falla, aparecen las úlceras. Raro, pero cierto.",
+      "escena": {
+        "tipo": "cierre"
+      }
+    }
+  ],
+  "publicacion": {
+    "descripcion": "Tu jugo gástrico tiene un pH de entre 1,5 y 3,5, y aun así tu estómago no se digiere. La clave es una barrera de moco y bicarbonato, más una renovación constante de las células de su superficie.\n\nFuente: Allen A, Flemström G. Gastroduodenal mucus bicarbonate barrier: protection against acid and pepsin. Am J Physiol Cell Physiol, 2005.\n\n¿Qué otro dato raro del cuerpo quieres ver?",
+    "hashtags": [
+      "#datoscuriosos",
+      "#cuerpohumano",
+      "#ciencia",
+      "#sabiasque"
+    ]
+  }
+}
