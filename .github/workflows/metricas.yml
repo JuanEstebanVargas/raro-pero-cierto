@@ -19,6 +19,8 @@ jobs:
         run: |
           git config user.name "raro-pero-cierto-bot"
           git config user.email "actions@users.noreply.github.com"
-          git pull --rebase -q || true
           git add metricas/ || true
-          git diff --cached --quiet || (git commit -m "Métricas actualizadas" && git push)
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Métricas actualizadas"
+          for i in 1 2 3 4; do git pull --rebase -q && git push && exit 0; sleep $((i*10)); done
+          exit 1

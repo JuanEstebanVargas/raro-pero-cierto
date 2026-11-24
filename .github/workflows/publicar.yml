@@ -28,4 +28,9 @@ jobs:
           git config user.name "raro-pero-cierto-bot"
           git config user.email "actions@users.noreply.github.com"
           git add salida/*/publicado.json || true
-          git diff --cached --quiet || (git commit -m "Publicado reel del día" && git push)
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Publicado reel del día"
+          # reintenta por si el flujo de métricas subió algo al mismo tiempo;
+          # si este registro se pierde, mañana se volvería a publicar el mismo video
+          for i in 1 2 3 4; do git pull --rebase -q && git push && exit 0; sleep $((i*10)); done
+          exit 1
