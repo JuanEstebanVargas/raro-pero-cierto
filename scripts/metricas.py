@@ -12,13 +12,17 @@ import urllib.request
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
-API = f"https://graph.instagram.com/{os.environ.get('IG_API_VERSION', 'v25.0')}"
+# Los tokens de "Instagram Login" empiezan por IG y van a graph.instagram.com;
+# los de "Facebook Login" (EAA...) van a graph.facebook.com. Se aceptan ambos.
+_TOKEN = os.environ.get("IG_TOKEN", "").strip().strip("\"'")
+_HOST = "graph.facebook.com" if _TOKEN.startswith("EAA") else "graph.instagram.com"
+API = f"https://{_HOST}/{os.environ.get('IG_API_VERSION', 'v25.0')}"
 HITOS = {"24h": 24, "72h": 72, "7d": 168}
 METRICAS = ["views", "reach", "likes", "comments", "saved", "shares", "total_interactions", "ig_reels_avg_watch_time"]
 
 
 def get(ruta: str, params: dict) -> dict | None:
-    q = urllib.parse.urlencode({**params, "access_token": os.environ["IG_TOKEN"].strip().strip("\"'")})
+    q = urllib.parse.urlencode({**params, "access_token": _TOKEN})
     try:
         with urllib.request.urlopen(f"{API}/{ruta}?{q}", timeout=60) as r:
             return json.loads(r.read())

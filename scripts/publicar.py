@@ -22,11 +22,15 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 BOGOTA = dt.timezone(dt.timedelta(hours=-5))
-API = f"https://graph.instagram.com/{os.environ.get('IG_API_VERSION', 'v25.0')}"
+# Los tokens de "Instagram Login" empiezan por IG y van a graph.instagram.com;
+# los de "Facebook Login" (EAA...) van a graph.facebook.com. Se aceptan ambos.
+_TOKEN = os.environ.get("IG_TOKEN", "").strip().strip("\"'")
+_HOST = "graph.facebook.com" if _TOKEN.startswith("EAA") else "graph.instagram.com"
+API = f"https://{_HOST}/{os.environ.get('IG_API_VERSION', 'v25.0')}"
 
 
 def llamar(metodo: str, ruta: str, datos: dict) -> dict:
-    datos = {**datos, "access_token": os.environ["IG_TOKEN"].strip().strip("\"'")}
+    datos = {**datos, "access_token": _TOKEN}
     cuerpo = urllib.parse.urlencode(datos).encode()
     url = f"{API}/{ruta}"
     if metodo == "GET":
@@ -73,10 +77,10 @@ def main():
     print(f"Publicando {c.name}")
     if os.environ.get("SOLO_PROBAR"):
         print("SOLO_PROBAR activo: no se publica.", base)
-        yo = llamar("GET", "me", {"fields": "user_id,username"})
-        print(f"Token valido para @{yo.get('username')} (user_id {yo.get('user_id')})")
-        if str(yo.get("user_id")) != os.environ["IG_USER_ID"]:
-            print("::warning::IG_USER_ID no coincide con el user_id del token")
+        tipo = "Instagram Login (IG...)" if _TOKEN.startswith("IG") else "Facebook Login (EAA...)" if _TOKEN.startswith("EAA") else "desconocido"
+        print(f"Token: tipo {tipo}, {len(_TOKEN)} caracteres, API {_HOST}")
+        yo = llamar("GET", os.environ["IG_USER_ID"].strip(), {"fields": "username"})
+        print(f"Token valido: publicaria en @{yo.get('username')}")
         return
     uid = os.environ["IG_USER_ID"]
     cont = llamar("POST", f"{uid}/media", {
