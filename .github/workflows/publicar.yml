@@ -18,7 +18,7 @@ jobs:
       - name: Publicar en Instagram
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
           REPO: ${{ github.repository }}
           RAMA: ${{ github.ref_name }}
           SOLO_PROBAR: ${{ github.event.inputs.solo_probar == '1' && '1' || '' }}
