@@ -13,6 +13,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_PAT }}
           REPO: ${{ github.repository }}
         run: |
+          case "$IG_TOKEN" in EAA*) echo "::warning::El token es de Facebook Login; este flujo solo renueva tokens de Instagram Login (IG...). Renuévalo a mano antes de que venza."; exit 0;; esac
           if [ -z "$GH_TOKEN" ]; then echo "::warning::Falta el secreto GH_PAT; renueva IG_TOKEN a mano antes de 60 días"; exit 0; fi
           NUEVO=$(curl -sf "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=$IG_TOKEN" | python3 -c "import sys,json;print(json.load(sys.stdin)['access_token'])")
           echo "::add-mask::$NUEVO"
