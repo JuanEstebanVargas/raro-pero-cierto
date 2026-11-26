@@ -18,7 +18,7 @@ METRICAS = ["views", "reach", "likes", "comments", "saved", "shares", "total_int
 
 
 def get(ruta: str, params: dict) -> dict | None:
-    q = urllib.parse.urlencode({**params, "access_token": os.environ["IG_TOKEN"]})
+    q = urllib.parse.urlencode({**params, "access_token": os.environ["IG_TOKEN"].strip().strip("\"'")})
     try:
         with urllib.request.urlopen(f"{API}/{ruta}?{q}", timeout=60) as r:
             return json.loads(r.read())

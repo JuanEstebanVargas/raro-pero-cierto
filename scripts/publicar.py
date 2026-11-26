@@ -26,7 +26,7 @@ API = f"https://graph.instagram.com/{os.environ.get('IG_API_VERSION', 'v25.0')}"
 
 
 def llamar(metodo: str, ruta: str, datos: dict) -> dict:
-    datos = {**datos, "access_token": os.environ["IG_TOKEN"]}
+    datos = {**datos, "access_token": os.environ["IG_TOKEN"].strip().strip("\"'")}
     cuerpo = urllib.parse.urlencode(datos).encode()
     url = f"{API}/{ruta}"
     if metodo == "GET":
