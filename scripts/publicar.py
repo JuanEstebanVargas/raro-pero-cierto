@@ -81,15 +81,6 @@ def main():
         print(f"Token: tipo {tipo}, {len(_TOKEN)} caracteres, API {_HOST}")
         yo = llamar("GET", os.environ["IG_USER_ID"].strip(), {"fields": "username"})
         print(f"Token valido: publicaria en @{yo.get('username')}")
-        if _HOST == "graph.facebook.com":
-            d = llamar("GET", "debug_token", {"input_token": _TOKEN}).get("data", {})
-            exp = d.get("expires_at") or 0
-            if exp:
-                cuando = dt.datetime.fromtimestamp(exp, BOGOTA).strftime("%Y-%m-%d %H:%M")
-                print(f"El token vence el {cuando} (hora Bogota)")
-            else:
-                print("El token no tiene fecha de vencimiento")
-            print("Permisos:", ", ".join(d.get("scopes", [])))
         return
     uid = os.environ["IG_USER_ID"]
     cont = llamar("POST", f"{uid}/media", {
