@@ -73,6 +73,10 @@ def main():
     print(f"Publicando {c.name}")
     if os.environ.get("SOLO_PROBAR"):
         print("SOLO_PROBAR activo: no se publica.", base)
+        yo = llamar("GET", "me", {"fields": "user_id,username"})
+        print(f"Token valido para @{yo.get('username')} (user_id {yo.get('user_id')})")
+        if str(yo.get("user_id")) != os.environ["IG_USER_ID"]:
+            print("::warning::IG_USER_ID no coincide con el user_id del token")
         return
     uid = os.environ["IG_USER_ID"]
     cont = llamar("POST", f"{uid}/media", {
